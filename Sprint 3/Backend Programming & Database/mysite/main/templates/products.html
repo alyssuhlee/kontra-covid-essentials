@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title> KCE </title>
+
+	{% load staticfiles %}
+	
+	<link rel="stylesheet" href="{% static 'products.css' %}">
+</head>
+<body>
+	<div id="rectangle">Kontra Covid Essentials</div>
+	<br>
+<section class="images">
+	<div class="icon1"><img src="{% static 'kce-logo.png' %}"></div>
+</section>
+	<!-- Contains the navigation bar -->
+	<header>
+		<br>
+		<a href="{% url 'products' %}"><button>Products</button></a>
+	</br>
+	<br>
+	<br>
+	<a href="{% url 'reviews' %}"><button>Reviews</button></a>
+	</br>
+	<br>
+	<br>
+	<a href="{% url 'about' %}"><button>About</button></a>
+	</br>
+<br>
+	<br>
+	<a href="{% url 'queries' %}"><button>Queries</button></a>
+	</br>
+		</header>
+
+<div class="rcorner"></div>
+
+<section class="prod">
+	<div class="grid-ctnr1">
+		<a href="{% url 'ppes' %}"><div class="ppes"></div></a>
+		<a href="{% url 'disinfectants' %}"><div class="disinfectants"></div></a>
+	</div>
+	<div class="grid-ctnr2">
+		<a href="{% url 'accessories' %}"><div class="accessories"></div></a>
+	</div>
+</section>
