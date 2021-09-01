@@ -1,1 +1,1 @@
-This is a requirement for our CMSC 126 (Web Programming) class.
+The application was created using HTML, CSS, JavaScript, and Python Django.
